@@ -1,0 +1,14 @@
+{{ block title }}
+ Contribute
+{{ endblock }}
+{{ block content }}
+<p>
+    This is a public good game with {{Constants.players_per_group}} players per group,
+    the remaining endowment is {{player.remain}},
+    and a multiplier of {{Constants.multiplier}}.
+    
+</p>
+    {{ formfields }}
+    {{ next_button }}
+
+{{ endblock }}

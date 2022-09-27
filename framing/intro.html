@@ -1,0 +1,18 @@
+{{ block title }}
+第{{player.round_number}}回目のゲームの準備画面
+{{ endblock }}
+{{ block content }}
+
+    
+<p>
+    現在タンクには{{group.prev_Tank}}が入っています。</br></br>
+    まず、回のはじめに持ち点の{{Constants.endowment}}pointsを付与します。</br></br>
+    準備ができたら下の「Next」ボタンを押して開始してください。</br></br>
+    
+</p>
+
+    
+    {{ formfields }}
+    {{ next_button }}
+
+{{ endblock }}

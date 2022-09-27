@@ -1,0 +1,15 @@
+{{ block title }}
+    結果表示
+{{ endblock }}
+
+{{ block content }}
+<p>
+    あなたの今期の持ち分は{{player.remain_prev}} + {{player.Tank_out}} × 2 = {{player.remain}}です。</br></br>
+    したがって、あなたの累積ポイントは{{player.paypay_prev}} + {{player.remain}} = {{player.paypay}}となりました。</br></br>
+    
+    他の参加者の出し入れによって、現在タンクには{{group.Tank}}が入っています。</br>
+</p>
+    {{ next_button }}
+{{ endblock }}
+
+

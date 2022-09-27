@@ -1,0 +1,13 @@
+{{ block title }}
+    タンクアウトができない場合のページ
+{{ endblock }}
+{{ block content }}
+<p>
+    現在、タンクには{{group.Tank}} しか入っていません。</br></br>
+    そのため、タンクからポイントを出すことができません。
+    
+</p>
+    {{ formfields }}
+    {{ next_button }}
+
+{{ endblock }}

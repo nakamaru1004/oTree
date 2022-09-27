@@ -1,0 +1,19 @@
+{{ block title }}
+    タンクイン用ページ
+{{ endblock }}
+{{ block content }}
+<p>
+
+    現在、タンクには{{group.prev_Tank}} 入っています。</br></br>
+    
+    今期の自動消費ポイントは、{{player.usage}}でした。</br></br>
+    
+    したがって、現在のあなたの持ち点は、
+    {{Constants.endowment}} - {{player.usage}} = {{player.remain}}です。</br></br>
+    
+    そのため、今期にあなたがタンクに入れられる量はO point ~ {{player.remain}} です。</br></br>
+</p>
+    {{ formfield 'Tank_in' label="タンクに何ポイント入れますか。" }}
+    {{ next_button }}
+
+{{ endblock }}

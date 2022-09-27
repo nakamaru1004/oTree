@@ -1,0 +1,15 @@
+{{ block title }}
+    タンクアウト用ページ
+{{ endblock }}
+{{ block content }}
+<p>
+    現在、タンクには{{group.Tank}}入っています。</br></br>
+    
+    あなたの現在の持ち点は{{player.remain}}です。</br></br>
+    
+    あなたが、タンクから引き出せる量はO point ~ 2 pointです。<br></br>
+</p>
+    {{ formfield 'Tank_out' label="タンクから何ポイント出しますか。" }}
+    {{ next_button }}
+
+{{ endblock }}

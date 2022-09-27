@@ -1,0 +1,15 @@
+{{ block title }}
+    結果表示
+{{ endblock }}
+
+{{ block content }}
+<p>
+    あなたの今期の持ち分は{{player.remain_trial_prev}} + {{player.Tank_out_trial}} × 2 = {{player.remain_trial}}です。</br></br>
+    したがって、あなたの累積ポイントは0 point + {{player.remain_trial}} = {{player.paypay_trial}}となりました。</br></br>
+    
+    他の参加者の出し入れによって、現在タンクには{{group.Tank_trial}}が入っています。</br>
+</p>
+    {{ next_button }}
+{{ endblock }}
+
+

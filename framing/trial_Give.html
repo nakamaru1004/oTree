@@ -1,0 +1,18 @@
+{{ block title }}
+    トライアル用1
+{{ endblock }}
+{{ block content }}
+<p>
+    現在、タンクには{{Constants.initial_tank}} points入っています。</br></br>
+    
+    今期の自動消費ポイントは、{{Constants.usage_trial1}}でした。</br>
+    したがって、現在のあなたの持ち点は、
+    {{Constants.endowment}} - {{Constants.usage_trial1}} = {{player.remain_trial}}です。</br>
+    
+    そのため、今期にあなたがタンクに入れられる量はO point ~ {{player.remain_trial}} です。</br></br>
+</p> 
+    
+     {{ formfield 'Tank_in_trial' label="タンクに何ポイント入れますか。" }}
+    {{ next_button }}
+
+{{ endblock }}

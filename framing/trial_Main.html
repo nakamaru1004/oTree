@@ -1,0 +1,15 @@
+{{ block title }}
+    トライアルの最初のページ
+{{ endblock }}
+{{ block content }}
+<p>
+    それではトライアル用のゲームを始めていきます。</br>
+    回の最初に、まず持ち点を{{Constants.endowment}}points配分します。</br>
+    準備ができたら下の「Next」ボタンを押して始めてください。</br>
+</p>
+    
+    
+    {{ formfields }}
+    {{ next_button }}
+
+{{ endblock }}

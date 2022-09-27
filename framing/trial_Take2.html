@@ -1,0 +1,14 @@
+{{ block title }}
+    トライアルタンクアウト用ページ
+{{ endblock }}
+{{ block content }}
+<p>
+    現在、タンクには{{group.Tank_trial}}入っています。</br></br>
+    先ほどあなたは、{{player.Tank_in_trial}}をタンクに入れたので、現在のあなたの持ち点は{{player.remain_trial}}です。</br></br>
+    あなたが、タンクから引き出せる量はO point ~ 2 pointsです。<br></br>
+</p>
+    
+    {{ formfield 'Tank_out_trial2' label="タンクから何ポイント出しますか。" }}
+    {{ next_button }}
+
+{{ endblock }}
